@@ -4,7 +4,7 @@ const withNextra = require('nextra')({
 });
 
 const isProduction = process.env.NODE_ENV === 'production';
-const prefix = isProduction ? '/docs-template' : '';
+const prefix = isProduction ? '/rede-docs' : '';
 
 const nextConfig = {
     images: {
