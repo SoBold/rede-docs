@@ -8,15 +8,15 @@ export default {
         const { asPath } = useRouter();
         if (asPath !== '/') {
             return {
-                titleTemplate: '%s - SoBold Docs',
+                titleTemplate: '%s - Rede Docs',
             };
         }
     },
     logo: Logo,
     project: {
-        link: 'https://github.com/SoBold/sobold-docs',
+        link: 'https://github.com/SoBold/rede-docs',
     },
-    docsRepositoryBase: 'https://github.com/SoBold/sobold-docs',
+    docsRepositoryBase: 'https://github.com/SoBold/rede-docs',
     footer: {
         text: Logo,
     },

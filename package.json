@@ -1,7 +1,7 @@
 {
-    "name": "sobold-docs",
+    "name": "rede-docs",
     "version": "1.0.0",
-    "description": "SoBold Docs",
+    "description": "Rede Docs",
     "main": "index.js",
     "scripts": {
       "dev": "next",

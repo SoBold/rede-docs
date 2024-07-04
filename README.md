@@ -1,4 +1,4 @@
-# SoBold Docs Template
+# Rede Docs
 
 This repository is a template for creating documentation sites using Nextra.
 
