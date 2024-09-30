@@ -1,0 +1,29 @@
+import { FileTree } from 'nextra/components';
+
+# Buttons
+
+Rede buttons are defined in the `_buttons.scss` file:
+
+<FileTree>
+    <FileTree.Folder name="scss" open={true}>
+        <FileTree.Folder name="base" open={true}>
+            <FileTree.File name="_buttons.scss" />
+        </FileTree.Folder>
+    </FileTree.Folder>
+</FileTree>
+
+Classes:
+- `.button`: gives the base styling to the button element
+
+Modifiers:
+- `.button--slategrey`: a button with white text color on a slategrey background
+- `.button--blue`: a button with dark grey text color on a lightblue background
+- `.button--red`: a button with white text color on a red background    
+- `.button--grey`: a button with dark grey text color on a light grey background
+- `.button--outline`: a button with slate grey text color on a transparent background, with a solid 1px border
+- `.button--naked`: a button with slate grey text color on a transparent background
+
+Example use:
+```
+<a class="button button--slategrey" href="/link">Button</a>
+```

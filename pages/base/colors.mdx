@@ -1,0 +1,72 @@
+import { FileTree } from 'nextra/components';
+
+# Colors
+
+Rede color variables are defined in the `_colors.scss` file in the variables folder::
+
+<FileTree>
+    <FileTree.Folder name="scss" open={true}>
+        <FileTree.Folder name="abstracts" open={true}>
+            <FileTree.Folder name="variables" open={true}>
+                <FileTree.File name="_colors.scss" />
+            </FileTree.Folder>
+        </FileTree.Folder>
+    </FileTree.Folder>
+</FileTree>
+
+---
+
+The function for outputting the color is in the `_color.scss` file in the functions folder:
+
+<FileTree>
+    <FileTree.Folder name="scss" open={true}>
+        <FileTree.Folder name="abstracts" open={true}>
+            <FileTree.Folder name="functions" open={true}>
+                <FileTree.File name="_color.scss" />
+            </FileTree.Folder>
+        </FileTree.Folder>
+    </FileTree.Folder>
+</FileTree>
+
+```
+@function color($color) {
+    @if map-has-key($colors, $color) {
+        $color: map-get($colors, $color);
+        @return $color;
+    }
+
+    @warn "unknown color `#{$color}` in palette";
+    @return null;
+}
+```
+
+Example use:\
+`background-color: color('rede-white');`
+
+---
+
+The map function for the color class is in the `_colors.scss` file in the base folder:
+
+<FileTree>
+    <FileTree.Folder name="scss" open={true}>
+        <FileTree.Folder name="base" open={true}>
+                <FileTree.File name="_colors.scss" />
+        </FileTree.Folder>
+    </FileTree.Folder>
+</FileTree>
+
+```
+@each $key, $color in $colors {
+    .#{$key} {
+        color: $color;
+    }
+
+    .back-#{$key} {
+        background-color: $color;
+    }
+}
+```
+
+Example use:\
+`.rede-red`\
+`.back-rede-red`
