@@ -18,6 +18,6 @@ export default {
     },
     docsRepositoryBase: 'https://github.com/SoBold/rede-docs',
     footer: {
-        text: Logo,
+        text: 'Rede Docs',
     },
 } satisfies DocsThemeConfig;
